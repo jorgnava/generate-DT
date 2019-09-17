@@ -5,7 +5,7 @@ printf "${RED} Make sure you have replace utils/api.json from Swagger /v2/api-do
 spectacle --disable-js --target-dir tmp utils/api.json > /dev/null 2>&1
 wkhtmltopdf tmp/index.html api.pdf > /dev/null 2>&1
 
-printf "${NC} Input range of pages you want to separate from api.pdf"
+printf "${NC} Input range of pages you want to separate from api.pdf\n"
 read -p 'First Page ' firstPage
 read -p 'Last Page ' lastPage
 mkdir tmpPdf
